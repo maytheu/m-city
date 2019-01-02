@@ -1,16 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
-import Routes from './Routes'
-import './app.css'
+import Routes from "./Routes";
+import "./app.css";
 
 const App = () => (
-    <BrowserRouter>
-        <Routes />
-    </BrowserRouter>
-    
-)
+  <BrowserRouter>
+    <Routes />
+  </BrowserRouter>
+);
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
+ReactDOM.render(<App />, document.getElementById("root"));
