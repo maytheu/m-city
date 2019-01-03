@@ -10,7 +10,8 @@ export const Tag = props => {
         fontSize: props.size,
         padding: "5px 10px",
         font: "righteous",
-        display: "inline-block"
+        display: "inline-block",
+        ...props.add
       }}
     >
       {props.children}
