@@ -1,8 +1,8 @@
-import React from "react";
+
 
 export const validate = element => {
   let error = [true, ""];
-  if (element.validation.requirred) {
+  if (element.validation.email) {
     const valid = /\S+@\S+\.\S+/.test(element.value) 
     const msg = `${!valid ? "This must be a valid email" : ""}`;
     error = !valid ? [valid, msg] : error;

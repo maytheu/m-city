@@ -15,7 +15,7 @@ class Enroll extends Component {
         config: {
           type: "email",
           name: "email_input",
-          placeholder: "Enter ypur email"
+          placeholder: "Enter your email"
         },
         validation: {
           requirred: true,
