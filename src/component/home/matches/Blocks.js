@@ -9,7 +9,7 @@ import {
 import MatchBlock from "../../../util/MatchBlock";
 
 class Blocks extends Component {
-  state = {
+  state = { 
     matches: []
   };
 
