@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ListItem from "@material-ui/core/ListItem";
-import {firebase} from '../../../firebase'
+import { firebase } from "../../../firebase";
 
 const AdminNav = () => {
   const links = [
@@ -26,7 +26,7 @@ const AdminNav = () => {
   const style = {
     color: "#ffffff",
     borderBottom: "1px solid #353535",
-    fontWeight: "300px" 
+    fontWeight: "300px"
   };
 
   const renderItems = () =>
@@ -38,14 +38,9 @@ const AdminNav = () => {
       </Link>
     ));
 
-    const logoutHandler = () => {
-        firebase.auth().signOut()
-        .then(() => {
-            console.log('Successful')
-        }, (error) => {
-            console.log('Error')
-        })
-    }
+  const logoutHandler = () => {
+    firebase.auth().signOut();
+  };
 
   return (
     <div>

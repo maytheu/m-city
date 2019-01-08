@@ -176,7 +176,7 @@ class AddEditPlayers extends Component {
     }
 
     if (validForm) {
-      if (this.state.formType === "Edit Players") {
+      if (this.state.formType === "Edit Player") {
         firebaseDB
           .ref(`players/${this.state.playerId}`)
           .update(submitData)
@@ -257,6 +257,10 @@ class AddEditPlayers extends Component {
                 formData={this.state.formData.position}
                 change={element => this.changeField(element)}
               />
+              <div className="success_label">{this.state.formSuccess}</div>
+              {this.state.formError ? (
+                <div className="error_label">Error submitting form</div>
+              ) : null}
               <div className="admin_submit">
                 <button>{this.state.formType}</button>
               </div>
