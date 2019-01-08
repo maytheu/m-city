@@ -21,7 +21,7 @@ class AddEditMatches extends Component {
           type: "date",
           name: "date_input",
           label: "Event date"
-        },
+        }, 
         validation: {
           requirred: true
         },
@@ -47,7 +47,7 @@ class AddEditMatches extends Component {
         element: "input",
         value: "",
         config: {
-          type: "text",
+          type: "number",
           name: "result_local",
           label: "Local Result"
         },
@@ -76,7 +76,7 @@ class AddEditMatches extends Component {
         element: "input",
         value: "",
         config: {
-          type: "text",
+          type: "number",
           name: "result_away",
           label: "Away Result"
         },
